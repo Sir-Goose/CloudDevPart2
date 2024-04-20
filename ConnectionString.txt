@@ -1,0 +1,1 @@
+﻿Server=tcp:cloud-dev-db-server.database.windows.net,1433;Initial Catalog=cloud-dev-db;Persist Security Info=False;User ID=st10269378;Password=Muffins231*;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;

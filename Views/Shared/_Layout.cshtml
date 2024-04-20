@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Title"] - ST10269378_WebApp</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1 class="header-title">KhumaloCraft</h1>
+    </header>
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Products">My Work</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Orders">Orders</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="User" asp-action="SignUp">Sign Up</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Product" asp-action="InsertProducts">Insert Products</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <main role="main" class="content">
+        @RenderBody()
+    </main>
+
+
+    <footer class="footer">
+        &copy; 2024 - ST10269378 Matthew Allison- <a asp-area="" asp-controller="Home" asp-action="Login">Privacy</a>
+    </footer>
+</div>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", false)
+</body>
+</html>

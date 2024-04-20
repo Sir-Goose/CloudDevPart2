@@ -1,0 +1,52 @@
+﻿@using CloudDevelopment.Models
+@model int  
+
+@{
+    ViewData["Title"] = "My Work";
+    var userId = ViewData["userID"];
+    var products = ViewData["Products"] as List<ProductTable>;
+}
+
+<div class="text-center">
+    <h1>My Work</h1>
+    <p>Please ensure that you have successfully logged in before attempting to place an order.</p>
+    <p>If you are logged in you will see a UserID other than 0 displayed below.</p>
+</div>
+
+@if (userId != null)
+{
+    <p class="user-id-text">User ID: @userId</p>
+}
+
+<h2>Product List:</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>QuantityInStock</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var product in products)
+    {
+        <tr>
+            <td>@product.ProductName</td>
+            <td>@product.Price</td>
+            <td>@product.Description</td>
+            <td>@product.QuantityInStock</td>
+            <td>
+                <form asp-controller="Transaction" class="product-form" asp-action="PlaceOrder" method="post">
+                    <input type="hidden" name="userID" value="@userId"/>
+                    <input type="hidden" name="productID" value="@product.ProductId"/>
+                    <input type="hidden" name="Price" value="@product.Price"/>
+                    <button class="product-button" type="submit"> Place Order </button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

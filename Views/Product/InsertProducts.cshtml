@@ -1,0 +1,22 @@
+﻿@model CloudDevelopment.Models.ProductTable
+@{
+    ViewData["Title"] = "InsertProducts";
+}
+
+<h1>Insert Products</h1>
+<p>
+    Please enter below the details of any product you wish to add to the database. Required details are the product's
+    name, a description of the product, a price and finally the quantity that is in stock. Do not worry about a product
+    ID as it will be generated automatically for you.
+</p>
+
+<body>
+<form action="InsertProdcuts" method="post">
+    <p>Insert new products</p>
+    <input type="text" name="ProductName" placeholder="ProductName" required>
+    <input type="text" name="Description" placeholder="Description" required>
+    <input type="text" name="Price" placeholder="Price" required>
+    <input type="text" name="QuantityInStock" placeholder="QuantityInStock" required>
+    <button type="submit">Insert</button>
+</form>
+</body>

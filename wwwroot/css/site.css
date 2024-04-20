@@ -1,0 +1,196 @@
+﻿body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #008080;
+    color: #FFFFFF;
+    margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #000080;
+}
+
+a {
+    color: #00007f;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FF0000;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #C0C0C0;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000;
+}
+
+th {
+    background-color: #000080;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #DCDCDC;
+}
+
+tr:hover {
+    background-color: #B0B0B0;
+}
+
+form {
+    background-color: #C0C0C0;
+    padding: 20px;
+    border: 2px solid #000000;
+    box-shadow: 5px 5px 3px #888888;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-right: 45px;
+}
+
+.product-form {
+    background-color: #C0C0C0;
+    padding: 0px;
+    border: 0px solid #000000;
+    box-shadow: 5px 5px 3px #888888;
+    margin-bottom: 0px;
+    box-sizing: border-box;
+    padding-right: 0px;
+}
+
+form p {
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #000080;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #FFFFFF;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #FF0000;
+}
+
+.product-button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #000080;
+    color: #FFFFFF;
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #C0C0C0;
+    padding: 20px;
+    border: 2px solid #000000;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.header {
+    text-align: center;
+    padding: 1px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #C0C0C0;
+    border-bottom: 2px solid #000000;
+}
+
+.header-title {
+    font-family: "MS Sans Serif", sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    color: #000080;
+    text-shadow: 2px 2px 4px #FFFFFF;
+}
+
+.navigation {
+    margin-bottom: 20px;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.content {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #000080;
+    color: #FFFFFF;
+}
+
+.product {
+    margin-bottom: 40px;
+}
+
+.product img {
+    max-width: 300px;
+}
+
+.user-id-text {
+    font-weight: bold;
+    font-size: large;
+    font-family: "MS Sans Serif", sans-serif
+
+}

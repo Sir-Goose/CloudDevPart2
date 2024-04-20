@@ -1,0 +1,20 @@
+﻿@model CloudDevelopment.Models.UserTable
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<h1>Sign Up</h1>
+<p>
+    Please enter your details below. You will need to enter your First Name, Last Name as well as your Email Address in
+    order to create an account and place orders.
+</p>
+
+<body>
+<form action="SignUp" method="post">
+    <p>Sign Up</p>
+    <input type="text" name="FirstName" placeholder="FirstName" required>
+    <input type="text" name="LastName" placeholder="LastName" required>
+    <input type="text" name="Email" placeholder="email@example.com" required>
+    <button type="submit">Register</button>
+</form>
+</body>

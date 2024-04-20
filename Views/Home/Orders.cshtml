@@ -1,0 +1,44 @@
+﻿@using CloudDevelopment.Models
+@model int  
+
+@{
+    ViewData["Title"] = "Orders";
+    var orders = ViewData["Orders"] as List<Transactions>;
+}
+
+<div class="text-center">
+    <h1>Orders</h1>
+    <p>
+        Please ensure that orders have been made prior to viewing this page. If the below
+        table is empty, it is highly probable that no orders have yet to be made
+    </p>
+</div>
+
+
+<h2>Order List:</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>TransactionID</th>
+        <th>UserID</th>
+        <th>ProductID</th>
+        <th>TransactionDate</th>
+        <th>Quantity</th>
+        <th>TotalAmount</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var order in orders)
+    {
+        <tr>
+            <td>@order.TransactionId</td>
+            <td>@order.UserId</td>
+            <td>@order.ProductId</td>
+            <td>@order.TransactionDate</td>
+            <td>@order.Quantity</td>
+            <td>@order.TotalAmount</td>
+        </tr>
+    }
+    </tbody>
+</table>

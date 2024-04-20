@@ -1,0 +1,23 @@
+﻿@model CloudDevelopment.Models.UserTable
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="text-center">
+    <h1>Login</h1>
+    <p>
+        If you do not already have an account you may <a href="@Url.Action("SignUp", "User")">Register</a> for a
+        new account by following the underlined link.
+    </p>
+</div>
+
+<body>
+<form asp-controller="Login" asp-action="Login" method="post">
+    <p>Please enter both your first name and your email address:</p>
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="text" name="email" placeholder="example@gmail.com" required>
+    <button type="submit">Login</button>
+</form>
+
+</body>
